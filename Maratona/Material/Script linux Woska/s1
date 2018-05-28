@@ -1,0 +1,36 @@
+﻿export PATH=.:$PATH
+if $1 != ""; then
+if test -d $1; then
+cd ~
+mkdir $1
+cd ~/$1
+echo "#include <stdlib.h>"     > $1.cpp
+echo "#include <stdio.h>"     >> $1.cpp
+echo "#include <math.h>"      >> $1.cpp
+echo "   "
+echo "int main() {"           >> $1.cpp
+echo "   ..."                 >> $1.cpp
+echo "return 0;"              >> $1.cpp
+echo "}"                      >> $1.cpp
+
+echo "" > $1.in
+echo "" > $1.sok
+
+gedit $1.cpp &
+gedit $1.sok &
+gedit $1.in &
+
+echo "g++ $1.cpp -o $1.exe" > g
+chmod 755 g
+
+echo "$1.exe < $1.in > $1.out" > e
+chmod 755 e
+
+echo "diff $1.sok $1.out" > c
+chmod 755 c
+
+cd ..
+exit 0
+fi
+fi
+exit 1

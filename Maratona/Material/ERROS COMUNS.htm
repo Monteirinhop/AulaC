@@ -1,0 +1,959 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+
+   
+
+
+<link rel="stylesheet" href="contests_data/article.css" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Common Mistakes in Online and Real-time Contests</title>
+<meta name="keywords" content="ACM, Crossroads, ACM Crossroads,programming contests, online contests, real-time contests, tips,online judges">
+<meta name="description" content="Tips and advice for online and real-time programming contests.">
+</head><body>
+
+  <!-- Begin Top -->
+<div id="container">
+<div id="banner">
+<a href="http://www.acm.org/crossroads"><img src="contests_data/xrdslogo.gif" alt="Crossroads Logo" title="Crossroads, The ACM Student Magazine"></a>
+<h1><a href="http://www.acm.org/crossroads">Crossroads</a></h1>
+<h2><a href="http://www.acm.org/crossroads">The ACM Student Magazine</a></h2>
+</div> <!--banner-->
+
+<div id="center">
+<div class="content">
+<!-- End Top -->
+
+
+<a href="http://www.acm.org/">ACM</a> /&nbsp;<a href="http://www.acm.org/crossroads/">Crossroads</a>&nbsp;/&nbsp;<a href="http://www.acm.org/crossroads/xrds7-5/">Xrds7-5</a>&nbsp;/&nbsp;Common Mistakes in Online and Real-time Contests<p></p>
+
+<p>
+<a href="http://www.acm.org/crossroads/espanol/xrds7-5/contests.html">      
+Este artículo tambíen está en Español.
+</a> </p>
+
+
+<h1>Common Mistakes in Online and Real-time Contests</h1>
+<p>by <em><a href="#bio">Shahriar Manzoor</a></em> </p>
+
+
+
+<h2>Introduction </h2>
+<p>Each year the <a href="#links">Association for Computing Machinery
+(ACM)</a> arranges a worldwide programming contest. This contest has
+two rounds: the regional contests and the World Final. The teams with
+the best results in the regional contests advance to the World Final.
+The contest showcases the best programmers in the world to
+representatives of large companies who are looking for talent. When
+practicing for programming competitions, remember that all your
+efforts should be directed at improving your programming skills. No
+matter what your performance is in a contest, don't be disappointed.
+Success in programming contests is affected by factors other than
+skill, most importantly, adrenaline, luck, and the problem set of the
+contest. One way of getting immediate feedback on your efforts is to
+join the Valladolid Online Programming Practice/Contest or the online
+judge hosted by Ural State University (USU). Successfully solving
+problems increases your online ranking in the respective
+competitions.</p>
+
+<p>This article is for beginning programmers who are new to
+programming contests. I will discuss the common problems faced in
+contests, the <a href="http://acm.uva.es/problemset">
+University of Valladolid online judge</a>, and the 
+<a href="http://acm.timus.ru/">USU online judge</a>.  The
+suggestions are divided into three parts: General Suggestions, Online
+Contest Suggestions, and Valladolid-Specific Suggestions. Throughout
+this paper, please note that in real-time contests, the judges are
+human and in online contests, the judges are computer programs, unless
+otherwise noted.</p>
+
+<h2>Different Types of Programming Contests</h2>
+
+<p>Many programming contests take place throughout the year, such as
+<a href="#links">ACM regional contests</a>, 
+<a href="#links">International Olympiad in Informatics (IOI)</a>, 
+<a href="#links">Centrinës Europos informatikos olimpiados
+(CEOI)</a>, and <a href="#links">Programmer of the Month (POTM)
+contest</a>. The most prestigious live programming contest is the 
+<a href="#links">ACM International Collegiate Programming Contest
+(ICPC)</a>, and the most prestigious online contest is the 
+<a href="#links">Internet Problem Solving Contest (IPSC)</a>. In this
+section, I will discuss some of the contests.</p>
+
+<h3>ACM International Collegiate Programming Contest (ICPC)</h3>
+       
+<p><a href="#links">ICPC</a>, first held in 1977, is now held yearly
+[<a href="#Kaykobad">4</a>]. The contest lasts five hours and
+generally contains eight problems. (However, the 2001 World Finals
+contained nine problems.) Three person teams are allotted a single
+computer. The teams submit their solutions to a judging software named
+<a href="#links">PC<sup>2</sup></a> developed at 
+<a href="http://www.ecs.csus.edu/">California State
+University, Sacramento (CSUS)</a>. The permitted programming languages
+are C/C++, Pascal, and Java.</p>
+
+<h3>Online Contests</h3>
+       
+<p>Online contests require no travel and are often less tense 
+[<a href="#Owen">1</a>]. The submission rules for the online contests at
+the <a href="#links">Valladolid</a> site and the 
+<a href="#links">USU online judge</a> site are the same: the contestants must mail their
+solutions to a certain e-mail address. The <a href="#links">IPSC</a>
+rules are quite different. The <a href="#links">IPSC</a> Contest Organizer provides inputs
+for the problems. Instead of e-mailing their solutions, the
+contestants have to e-mail their outputs.</p>
+
+
+<h2>Some Tips for Contestants</h2>
+A good team is essential to succeeding in a programming contest.  A good programming team
+must have knowledge of standard algorithms and the ability to find
+an appropriate algorithm for every problem in the set. Furthermore, teams should be able 
+to code algorithms into a working program and work well together.
+<p>
+The problems presented in programming contests often fall into one of
+five categories including search, graph theoretic, geometric, dynamic
+programming, trivial, and non-standard.  Search problems usually require
+implementing breadth-first search or depth-first search. Graph theoretic problems 
+commonly include shortest path, maximum flow, minimum spanning
+tree, etc. Geometric problems are based on general and computational
+geometry. Dynamic programming problems are to be solved with tabular
+methods. Trivial problems include easy problems or problems that can
+be solved without much knowledge of algorithms, such as prime number
+related problems. Non-standard problems are those that do not fall
+into any of these classes, such as simulated annealing, mathematically
+plotting n-queens, or even problems based on research papers. To learn
+more about how problems are set in a contest you can read Tom
+Verhoeff's paper [<a href="#Tom">6</a>].</p>
+     
+
+<h2>What you should do to become a good team</h2> 
+<p>
+There is no magic recipe to becoming a good team, however, by
+observing the points below (some of which were taken from Ernst et al.
+[<a href="#fabian">3</a>]) you can certainly improve. When training,
+make sure that every member of the team is proficient in the basics,
+such as writing procedures, debugging, and compiling.  An effective
+team will have members with specialties so the team as a whole has
+expertise in search,  graph traversal, dynamic programming, and
+mathematics. All team members should know each other's  strengths and
+weaknesses and communicate effectively with each other.  This is
+important, for deciding which member should solve each problem. 
+Always think about the welfare of the team. Solving problems together
+can also be helpful. This strategy works when the problem set is hard.
+This strategy is also good for teams whose aim is to solve one problem
+very well.  On the other hand, the most efficient way to write a
+program is to write it alone, avoiding extraneous communication and
+the confusion caused by different programming styles.</p>
+
+<p>As in all competitions, training under circumstances similar to
+contests is helpful. During the contest make sure you read all the
+problems and categorize them into easy, medium and hard.  Tackling the
+easiest problems first is usually a good idea.  If possible try to
+view the current standings and find out which problem is being solved
+the most. If that problem has not yet been solved by your team, try to
+solve it immediately, odds are it is an easy problem to solve. 
+Furthermore, if the your solution to the easiest problem in the
+contest is rejected for careless mistakes, it is often a good idea to
+have another member redo the problem. When the judges reject your
+solution, try to think about your mistakes before trying to debug.
+Real-time debugging is the ultimate sin, you don't waste too much of
+your time with a single problem. In a five-hour contest you have 15
+person-hours and five computer-hours. Thus, computer-hours are
+extremely valuable. Try not to let the computer sit idle. One way to
+keep the computer active is to use the chair in front of the computer
+only for typing and not for thinking. You can also save computer time
+by writing your program on paper, analyzing it, and then use the
+computer. Lastly, it is important to remember that the scoring system
+of a contest is digital. You do not get any points for a 99%-solved
+problem. At the end of the contest you may find that you have solved
+all the problems 90%, and your team is at the bottom of the rank list.
+</p>
+
+
+
+<h2>Different Types of Judge Responses</h2>
+<p>
+The following are the different types of judge replies that you can encounter in a contest 
+[<a href="#Rezaul">2</a>]: </p>
+<h3>Correct</h3>
+
+<p>Your program must read input from a file or standard input
+according to the specification of the contest question. Judges will
+test your program with their secret input. If your program's output
+matches the judges' output you will be judged correct. </p>
+ 
+<h3>Incorrect output</h3>
+       
+<p>If the output of your program does not match what the judges
+expect, you will get an incorrect output notification. Generally,
+incorrect output occurs because you have either misunderstood the
+problem, missed a trick in the question, didn't check the extreme
+conditions or simply are not experienced enough to solve the problem. 
+Problems often contain tricks that are missed by not reading the
+problem statement very carefully. </p>
+ 
+ <h3>No output</h3>
+ 
+<p>Your program does not produce an output. Generally this occurs
+because of a misinterpretation of the input format, or file.  For
+example, there might be a mixup in the input filename e.g., the judge
+is giving input from "a.in," but your program is reading input from
+"b.in." It is also possible that the path specified in your program
+for the input file is incorrect. The input file is in most cases in
+the current directory. Errors often occurs because of poor variable
+type selection or because a runtime error has occurred, but the judge
+failed to detect it. </p>
+
+<h3>Presentation error</h3>
+     
+<p>Presentation error's occur when your program produces correct
+output for the judges' secret data but does not produce it in the
+correct format. <a href="#PE">Presentation error</a> is discussed in
+detail later in this article.</p>
+ 
+ <h3>Runtime error</h3>
+     
+<p>This error indicates that your program performs an illegal
+operation when run on judges' input. Some illegal operations include
+invalid memory references such as accessing outside an array boundary.
+ There are also a number of common mathematical errors such as divide
+by zero error, overflow or domain error.</p>
+
+<h3>Time limit exceeded</h3>
+     
+<p>In a contest, the judge has a specified time limit for every
+problem. When your program does not terminate in that specified time
+limit you get this error. It is possible that you are using an
+inefficient algorithm, e.g., trying to find the factorial of a large
+number recursively, or perhaps that you have a bug in your program
+producing an infinite loop.  One common error is for your program to
+wait for input from the standard input device when the judge is
+expecting you to take input from files.  A related error comes from
+assuming wrong input data format, e.g., you assume that input will be
+terminated with a "#" symbol while the judge input terminates with
+end-of-file. </p>
+
+
+
+
+<h2>General Suggestions for Contests</h2>
+
+<h3>Maximum memory</h3>
+     
+<p>The maximum memory allowed on the Valladolid site is 32MB. This
+includes memory for global variables, the heap, and the stack. Even if
+you find that you have allocated much less than 64K memory, you will
+find that the judge often shows that more memory has been allocated.
+Also, you should not allocate 32 MB of global memory because 32MB is
+maximum for all types of memory. The maximum memory for real contests
+varies; for the World Final, it is greater than 128MB.</p>
+
+<h3>Problems with DOS Compilers and memory allocation</h3>
+     
+<p>Many of us like to use DOS compilers like Turbo C++ 3.0 and Borland
+C++, which do not support allocating more than 64K memory at a time.
+It is always a good idea to allocate memory with a constant so that
+your test runs use less than 64K memory. Before the submit run, the
+size of memory can be increased by just changing the value of the
+constant. If you don't practice this, it is very likely that you will
+face problems like "Run time error," "Time limit exceeded," and "Wrong
+answer." An example:</p>
+       <pre>int const SIZE=100;
+       int store[SIZE][SIZE];
+       void initialize(void)
+       {
+       &nbsp;&nbsp;&nbsp;&nbsp; int   i,j;
+&nbsp;&nbsp;&nbsp;&nbsp; for  (i=0;i&lt;SIZE;i++)
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for  (j=0;j&lt;SIZE;j++)
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;store[i][j]=0;
+       }
+</pre>
+
+<h3>"Time limit exceeded" is not always "Time limit exceeded"</h3>
+<p>When you submit a program to the judge, the judge gives you a
+response, but this response is not always accurate. For example, if
+you allocate less memory than is required, the program may not
+terminate (it may not even crash), and the judge will tell you "Time
+limit exceeded." On seeing this message, if you try to optimize your
+program rather than correcting the memory allocation problem, your
+program will never be accepted. The following example illustrates this
+problem. The skeleton of your program is as follows: </p>
+       <pre>#include &lt;stdio.h&gt;
+        int const   MAX=100;
+        int   array[MAX],I;
+        void   main( void  )
+       {
+       &nbsp;&nbsp;&nbsp;&nbsp; for  (i=0; i&lt;=100;i++)
+       &nbsp;&nbsp;&nbsp;&nbsp;{
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if  (array[i]==100)
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;array[i]= -10000;
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- - - - - -
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- - - - - -
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- - - - - -
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+       &nbsp;&nbsp;&nbsp;&nbsp;} 
+       }
+</pre>
+<p>In this example, you have allocated a 100 element array. Your
+program attempts to access array element 100, which is out of the
+range [0..99], because of an error in the for loop statement. It will
+instead access the address of counter variable i. Because the value
+array[100] is set to 10000, the counter value will be set to 10000,
+so your loop will take a much longer time to terminate and may not
+even complete at all. So, the judge will give you message "Time limit
+exceeded" even though it actually is a memory allocation error. </p>
+
+<h3>Test the program with multiple datasets</h3>
+     
+<p>There is always a sample input and output provided with each
+contest question. Inexperienced contestants get excited when one of
+their programs matches the sample output for the corresponding input,
+and they think that the problem has been solved. So they submit the
+problem for judgment without further testing and, in many cases, find
+they have the wrong answer. Testing only one set of data does not
+check if the variables of the program are properly initialized because
+by default all global variables have the value zero (integers = 0,
+chars = '\x0', floats= 0.0 and pointers = NULL). Even if you use
+multiple datasets the error may remain untraced if the input datasets
+are all the same size, in some cases descending in size or ascending
+in size. So, the size of the dataset sequence should be random. It is
+always a good idea to write a separate function for initialization.
+</p>
+ 
+<h3>Take the input of floats in arrays</h3>
+     
+    <p>Consider the following program segment:</p>
+<pre>#include&lt;stdio.h&gt;  float   store[100];  void   
+main( void  ) { &nbsp;&nbsp;&nbsp;&nbsp; int   
+j; &nbsp;&nbsp;&nbsp;&nbsp; for  (j=0;j&lt;100;j++) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scanf(   "%f"  ,&amp;store[j]); 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scanf(   "%f"  ,&amp;store[j]); 
+t linked." To get rid of this type of error, just change it to take the input 
+into a normal floating point variable then assign that variable to the array, 
+as follows: </pre>
+
+<pre>#include &lt;stdio.h&gt;
+ float   store[100];
+ void   main( void  )
+{
+&nbsp;&nbsp;&nbsp;&nbsp; int   j;
+&nbsp;&nbsp;&nbsp;&nbsp; float   temp;
+&nbsp;&nbsp;&nbsp;&nbsp; for  (j=0;j&lt;100;j++)
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scanf(   "%f"  ,&amp;temp);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;store[j]=temp;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+}
+</pre>
+     <h3>Mark Dettinger's suggestions on geometric problems</h3>
+     
+<p>Mark Dettinger was the coach for the team from the University of
+Ulm. He suggested to me that sometimes it is a good idea to avoid
+geometric problems unless one has prewritten routines. The routines
+that can be useful are: </p>
+    <ul>
+      <li>Line intersection.</li>
+      <li>Line segment intersection.</li>
+      <li>Line and line segment intersection.</li> 
+      <li>Convex hull.</li>
+      <li>If a point is within a polygon.</li>
+      <li>From a large number of points what is the number of maximum points 
+        on a single line.</li>
+      <li>Closest pair problem. Given a set of points you have to find out the 
+closest two points between them.</li> 
+      <li>Try to learn how to use C's built-in qsort() function to sort 
+integers 
+        and records.</li>
+      <li>Area of a polygon (convex or concave).</li> 
+      <li>Center-of-gravity of a polygon (convex or concave).</li> 
+      <li>Minimal circle, a circle with the minimum radius that can include the 
+coordinates for a given number of points.</li> 
+      <li>Minimal sphere.</li> 
+      <li>Whether a rectangle fits in another rectangle even with 
+rotation.</li>
+      <li>Identify where two circles intersect. If they don't, determine 
+whether one circle is inside another or if they are far away.</li>
+      <li>Line clipping algorithms against a rectangle, circle, or ellipse.</li> 
+    </ul>
+
+    <h3>Judging the judge!</h3>
+<p>Judges often omit information. For
+example, judges in my country give the error "Time limit exceeded" but
+never say what the time limit is. In Valladolid, often the input size
+is not specified (e.g., <a href="#links">problem 497-Strategic defense
+initiative</a>). </p>
+
+<p>Suppose that the maximum number of inputs is not given. This is
+often vital information because if the number is small, you can use
+backtracking, and if it is large, you have to use techniques like
+dynamic programming or backtracking with memorization. In problem 
+<a href="#links">497</a>, the maximum possible number of missiles to
+intercept is not given. Suppose that the loop 
+for(j=0;j&lt;100000000;j++) takes one second to run for the judge, and
+an unknown N is the number of inputs given by the online judge. Send
+the following program with your code. Place it just after you have
+read the value of N.</p>
+
+<pre> for  (I=1;I&lt;=20;I++)
+{
+&nbsp;&nbsp;&nbsp;&nbsp; if  (I*1000&gt;=N)
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for(j=0;j&lt;I*100000000;j++);
+&nbsp;&nbsp;&nbsp;&nbsp;}
+}
+</pre>
+    
+<p>From the runtime of the program you will know the number of
+input N. Using this method you can also determine how fast the judge's
+computer is compared with yours and thus find out the approximate time
+limit for any problem on your computer. Most of the live contests have
+a practice session prior to the contest. On this day you should try to
+determine the speed of the judge computer by sending programs
+consisting of many loops and nested loops.</p>     
+
+<p>Did you know that there was a mistake in a problem of the World Final
+2000? The culprit problem was Problem F. The problem specification
+said that the input graph would be complete but not all inputs by the
+judge were complete graphs. At least one of the teams sent a program
+that checked if the input graph was complete. If the input graph was
+incomplete, then their program entered an infinite loop. So, the
+response from the judge was "Time limit exceeded." From this response
+they were able to know that some of the input graphs were incomplete
+and solved the problem accordingly.</p>
+
+<h3>Use double instead of float</h3>
+     
+<p>It is always a good idea to use double instead of float because
+double gives higher precision and range. Always remember that there is
+also a data type called a long double. In Unix/Linux C/C++, there is
+also a long long integer. Sometimes it is specified in the problem
+statement to use float type. In those cases, use floats. </p>  
+
+    <h3>Advanced use of printf() and scanf()</h3>
+     
+<p>Those who have forgotten the advanced use of printf() and scanf(),
+recall the following examples:</p>
+
+<pre>scanf(   "%[ABCDEFGHIJKLMNOPQRSTUVWXYZ]"  ,&amp;line);  //line is a string  
+</pre>
+    
+<p>This scanf() function takes only uppercase letters as input to line
+and any other characters other than A..Z terminates the string.
+Similarly the following scanf() will behave like gets(): </p>
+
+<pre>scanf(   "%[^\n]"  ,line);  //line is a string  </pre>
+    
+<p>Learn the default terminating characters for scanf(). Try to read
+all the advanced features of scanf() and printf(). This will help you
+in the long run.</p>
+
+    <h3>Using new line with scanf()</h3>
+     
+    <p>If the content of a file (input.txt) is </p>
+<pre>abc
+def</pre>
+    
+    <p>and the following program is executed 
+      to take input from the file: </p>
+<pre> char   input[100],ch;
+ void   main( void  )
+{
+&nbsp;&nbsp;&nbsp;&nbsp;freopen(   "input.txt"  ,   "rb"  ,stdin);
+&nbsp;&nbsp;&nbsp;&nbsp;scanf(   "%s"  ,&amp;input);
+&nbsp;&nbsp;&nbsp;&nbsp;scanf(   "%c"  ,&amp;ch);
+}
+</pre>
+  
+    <p>What will be the value of input and ch?</p>
+<p>
+The following is a slight modification to the code: </p>
+
+<pre> char   input[100],ch;
+ void   main( void  )
+{
+&nbsp;&nbsp;&nbsp;&nbsp;freopen(   "input.txt"  ,"rb",stdin);
+&nbsp;&nbsp;&nbsp;&nbsp;scanf(   "%s\n"  ,&amp;input);
+&nbsp;&nbsp;&nbsp;&nbsp;scanf(   "%c"  ,&amp;ch);
+}
+</pre>
+ <p>   
+    What will be their value now? The value of ch will be '\n' for the first code and 'd' for the second code.</p>
+
+    <h3>Memorize the value of pi</h3>
+
+<p>You should always try to remember the value of pi as far as
+possible, <em>3.14159265358</em>97932384626433832795, certainly the part in italics. 
+The judges may not give the value in the question, and if you
+use values like 22/7 or 3.1416 or 3.142857, then it is very likely
+that some of the critical judge inputs will cause you to get the wrong
+answer. You can also get the value of pi as a compiler-defined
+constant or from the following code:
+
+Pi=2*acos(0)</p>  
+
+    <h3>Problems with equality of floating point (double or float) numbers</h3>
+     
+<p>You cannot always check the equality of floating point numbers with
+the =&nbsp;= operator in C/C++. Logically their values may be same, but
+due to precision limit and rounding errors they may differ by some
+small amount and may be incorrectly deemed unequal by your program.
+So, to check the equality of two floating point numbers a and b, you
+may use codes like:</p>
+<pre> if  (fabs(a-b)&lt;ERROR) printf(   "They are equal\n"  );
+</pre>
+    
+<p>Here, ERROR is a very small floating-point value like 1e-15.
+Actually, 1e-15 is the default value that the judge solution writers
+normally use. This value may change if the precision is specified in
+the problem statement.</p>
+
+<h3>The cunning judges</h3>
+     
+<p>Judges always try to make easy problem statements longer to make
+them look harder and the difficult problem statements shorter to make
+them look easy. For example, a problem statement can be "Find the
+common area of two polygons" -- the statement is simple, but the
+solution is very difficult. Another example is "For a given number
+find two such equal numbers whose multiplication result will be equal
+to the given number." Though the second statement is much longer than
+the first, the second problem statement is only asking to find the
+square root of a number, which can be done using a built-in
+function.</p>
+
+<h3>Use the assert function</h3>
+     
+<p>It is always nice to use the C/C++ assert() function, which is in
+the header file assert.h. With the assert() function you can check for
+a predefined value for a variable or an expression at a certain stage
+of your program. If for some reason the variable or expression does
+not have the specified value, assert() will print an error message.
+See your C/C++ documentation for further details.</p>
+
+<h3>Avoid recursion</h3>
+     
+<p>It is almost always a good idea to avoid recursion in programming
+contests. Recursion takes more time, recursive programs crash more
+frequently especially in the case of parsing, and, for some people,
+recursion is harder to debug. But recursion should not be discounted
+completely, as some problems are very easy to solve recursively (DFS,
+backtracking), and there are some people who like to think
+recursively. However, it is a bad habit to solve problems recursively
+if they can be easily solved iteratively. In live
+programming contests, there is no point in writing classic code, or
+code that is compact but often hard to understand and debug. In
+programming contests, classic code serves only to illustrate the
+brilliance of the programmer. For example, the code for swapping two
+values can be written classically as:</p>
+<pre>#define swap(xxx, yyy) (xxx) ^= (yyy) ^= (xxx) ^= (yyy)
+</pre>
+But in a contest you will not get extra points for this type of code writing.<p></p>
+
+<h3>Improve your understanding of probability and card games</h3>
+    
+<p>Having a good understanding of probability is vital to being a good
+programmer. If you want to measure your grasp of probability, just
+solve <a href="#links">problem 556 of Valladolid</a> and go through a
+statistics book on probability. Know about probability theorems,
+independent and dependent events, and heads/tails probability. You
+should also be able to solve common card game-related problems.</p>
+
+<h3>Be careful about using gets() and scanf() together</h3>
+     
+<p>You should also be careful about using gets() and scanf() in the
+same program. Test it with the following scenario. The code is: </p>
+<pre>scanf(   "%s\n"  ,&amp;dummy);
+gets(name);
+</pre>
+
+<p>And the input file is:</p>
+    
+<pre>ABCDEF 
+bbbbbXXX
+</pre>
+    
+What do you get as the value of name? "XXX" or "bbbbbXXX" (Here, "b"
+means blank or space) 
+
+<h2>Suggestions for UNIX-based Online Judges and Contests</h2>
+
+    <h3>Function portability</h3>
+<p>Not all C/C++ functions available in DOS are available in UNIX.
+Check the documentation for the portability among operating systems.
+If a function is portable to UNIX, you can use it to solve problems on
+the Valladolid and USU sites. Use only standard input and output
+functions for taking inputs and producing outputs. </p>
+ 
+<h3>itoa(), the important function that UNIX doesn't have</h3>
+     
+    <p>UNIX does not support the important function itoa(), which converts an integer to 
+    a string. The replacement for this function can be: </p>
+<pre> char   numstr[100]; 
+ int   num=1200;
+sprintf(numstr,   "%d"  ,num);  //to decimal  
+sprintf(numstr,   "%X"  ,num);  //to uppercase hexadecimal  
+</pre>
+    
+<p>Try to find replacements for other functions that are not available in UNIX/LINUX.</p> 
+
+    <h3>Problems with the settings of mailer program</h3>
+     
+<p>Some problems don't get accepted even if they are solved correctly.
+Such problems from Valladolid are <a href="#links">371- Ackermann
+Function</a>, <a href="#links">336-A node too far</a>, <a href="#links">466-mirror, mirror</a>, etc. It is because our e-mail
+programs (e.g., Outlook Express, Eudora) break longer lines, and these
+problems have long lines in their output. So in Outlook Express you
+should go to Tools-&gt; Options-&gt; Send-&gt; Send text setting and change the
+Automatically Wrap Text from 76 (default) to 132. Similar options can
+be found in other mailer programs. The Ural State University online
+judge has a program submission form with which you can directly submit
+your program without sending an e-mail. Remember that problems with
+mailer settings can cause both wrong answers and compile errors.</p>
+
+    <h3><a name="PE">Presentation error</a></h3>
+     
+<p>Presentation errors are neither caused by algorithmic nor logical
+mistakes. There is a difference between the presentation error of
+online judges and that of live judges. The latter are able to detect
+mistakes such as misspellings, extra words, extra spaces, etc., and
+differentiate them from algorithmic errors, such as wrong cost, wrong
+decisions, etc. These mistakes are the presentation errors as graded
+by the human judges. On the other hand, online judges in most cases
+compare the judge output and the contestant output with the help of a
+file compare program so that even spelling mistakes can cause a "wrong
+answer." Generally, when the file compare program finds extra new
+lines, these are considered to be presentation error. Human judges,
+though, do not typically detect these mistakes. But now computers are
+becoming more powerful, larger judge inputs are being used and larger
+output files are being generated. In live contests, special judge
+programs are being used that can detect presentation errors, multiple
+correct solutions, etc. We are advancing towards better judging
+methods and better programming skills. The recent statistics of the
+ACM shows that participation in the ACM International Collegiate
+Programming Contest is increasing dramatically, and in the near future
+the competition in programming contests will be more intense 
+[<a href="#Poucher">5</a>]. So the improvement of the judging system is
+almost a necessity.</p>
+ 
+     <h3>A common mistake of contestants</h3>
+<p>Recently, I arranged several contests with Rezaul Alam Chowdhury
+and in collaboration with the University of Valladolid and have seen
+contestants make careless mistakes. The most prominent mistake is
+taking things for granted. In a problem I specified that the inputs
+will be integers (as defined in mathematics) but did not specify the
+range of input and many contestants assumed that the range will be
+0-&gt;(2^32-1). But in reality many large numbers were given as input.
+The maximum input file size was specified from which one could assume
+what was the maximum possible number. There were also some negative
+numbers in the input because integers can be negative. </p>
+
+<h3>The causes of compile error</h3>
+     
+<p>Compile error is a common error on the Valladolid site. It may seem
+annoying to compile and run a program, then send it to the online
+judge and get a compile error. Generally these errors occur because contestants
+omitted #include files.  Some compilers do not require including 
+the header files even when we use functions under those header files. 
+However, the online judge never allows this. For example, some 
+functions exist both in math.h and stdlib.h. For the online judge, you 
+need to include both of the header files if you want to use them. Compiler errors 
+also occur commonly when contestants do not specify the correct language.  
+Often C code implemented in some compilers inadvertently takes advantage of C++ features.
+When the language specified to the judge is C, a compile error is generated.
+For example, the following may be compiled as a C program in
+a DOS/Windows environment but not in UNIX/LINUX. </p>
+<pre> for  ( int  i=0;i&lt;100;i++)	
+{
+&nbsp;&nbsp;&nbsp;&nbsp;printf("Compile Error\n"  );
+}
+</pre> 
+
+<h4>E-mail sending format</h4>
+       
+<p>Mail sent to the online judge should be in plain text format. If
+the mail is in Rich Text or HTML, the program will not compile. You
+should not send your program as an attachment.</p>
+ 
+<h4>Mysterious characters</h4>
+       
+<p>When I first started programming for Valladolid, I used Turbo C++.
+After a program was successfully completed, I opened the source code
+in Notepad, selected the whole text, copied and pasted it in my mail
+editor, and sent the program to the Valladolid site. I got a Compile
+error message but could not discover the cause. One day, I pasted it
+in my email editor, saved it as a text file, and then opened it in my
+DOS text editor. I discovered some mysterious characters in the file,
+which were invisible in Windows. If you receive a Compile error
+message and cannot discover the cause, check if your mail or text
+editor is adding extra symbols to your code.</p>
+
+<h4>Using non-portable functions</h4>
+       
+<p>Compile errors are caused by the use of the functions which are
+only available in DOS and not in LINUX, such as strrev(), itoa()
+etc.</p>
+
+<h4>Using C++ style comments</h4>
+
+<p>C++ allows a comment style that starts with //. If the mailer wraps a comment to two 
+lines, you may get a compile error. </p>
+
+<h2>Valladolid-specific suggestions</h2>
+ 
+<p>The next section provides suggestions for solving problems for the Valladolid online 
+  judge. </p>
+
+<h3>Types of input in the Valladolid online judge</h3>
+     There are four types of input in the online judge. (Latest change) 
+<ul>
+      <li>Non-multiple input without special correction program (Red Flag)</li>
+      <li>Non-multiple input with special correction program (Orange Flag)</li>
+      <li>Multiple input without special correction program (Blue Flag)</li>
+      <li>Multiple input with special correction program (Green Flag)</li>
+</ul>
+
+<h4>What is a special correction Program?</h4>
+<p>There are some problems that have one unique output for a single
+input, and other problems with multiple output for the same
+input. For example if you are asked to find the maximum appearing
+string of length 3 in the string "abcabcabcijkijkijk," unfortunately
+the answer can be both "abc" and "ijk." So, if your program gives the
+output "abc," it is correct, "ijk" is also correct. The judge program
+cannot determine the correctness of your program by simply comparing
+your output to the judge program output. The judge must write a
+special program, which will read your answer and determine if it is
+right or wrong. This special program is described as a special
+correction program in the Valladolid online judge. For the problems
+with special correction programs, (<a href="#links">Problem 104, 120,
+135</a>, etc., or the problems with orange || green flag), you cannot
+be sure that your program is incorrect even if your program output
+does not match the sample output for the given sample input.</p>
+ 
+ 
+<p>"Multiple input programs" are an invention of the online judge. 
+The online judge
+often uses the problems and data that were first presented in live contests.
+
+Many solutions to problems presented in live contests take
+a single set of data, give the output for it, and terminate. This
+does not imply that the judges will give only a single set of data.
+The judges actually give multiple files as input one after another and
+compare the corresponding output files with the judge output. However,
+the Valladolid online judge gives only one file as input. It inserts all the judge
+inputs into a single file and at the top of that file, it writes how
+many sets of inputs there are. This number is the same as the number
+of input files the contest judges used. A blank line now separates
+each set of data. So the structure of the input file for multiple
+input program becomes:</p> 
+
+<pre>Integer N   &nbsp;&nbsp; //denoting the number of sets of input  
+--blank line---
+input set 1  //As described in the problem statement  
+--blank line---
+input set 2  //As described in the problem statement  
+--blank line---
+input set 3  //As described in the problem statement  
+--blank line---
+.
+.
+.
+--blank line---
+input set n   //As described in the problem statement  
+--end of file--
+</pre>
+    
+<p>Note that there should be no blank after the last set of data. Sometimes there 
+may be, so always check. The structure of the output 
+file for a multiple input program becomes:</p>
+<pre>Output for set 1  //As described in the problem statement  
+--Blank line---
+Output for set 2  //As described in the problem statement  
+--Blank line---
+Output for set 3  //As described in the problem statement  
+--Blank line---
+.
+.
+.
+--blank line---
+Output for set n  //As described in the problem statement  
+--end of file--
+</pre>
+    
+<p>The USU online judge does not have multiple input programs like
+Valladolid. It prefers to give multiple files as input and sets a time
+limit for each set of input. </p>
+
+<h3>Problems of multiple input programs</h3>
+     
+There are some issues that you should consider differently for
+multiple input programs. Even if the input specification says that the
+input terminates with the end of file (EOF), each set of input is
+actually terminated by a blank line, except for the last one, which is
+terminated by the end of file. Also, be careful about the
+initialization of variables. If they are not properly initialized,
+your program may work for a single set of data but give correct output
+for multiple sets of data. All global variables are initialized to
+their corresponding zeros. Thus, for a single set of input, the
+initialization may not be necessary, but for multiple inputs, it is a
+must.
+
+<h3>The Fixing Mistake section</h3>
+     
+<p>Always be sure to see the Fixing Mistake section of the Valladolid
+online judge. Some of the problems in the Valladolid online judge have
+errors, which are corrected on this page.</p>
+
+<h3>Read the message board</h3>
+
+<p>Always try to read the message board of the Valladolid site. You
+will learn many things from other programmers. The USU online judge
+also has a message board. You can also submit your own views and
+problems via these boards.</p>
+
+<h2>Conclusion</h2>
+ 
+<p>Many people believe that the best programmer is the one with
+greatest knowledge of algorithms. However, problem-solving skills
+contribute to programming success as much as raw knowledge of
+algorithms. Don't lose your nerve during a contest, and always try to
+perform your best.</p>
+
+
+
+
+<h2>References</h2>
+<dl>
+
+<dt><a name="Owen"></a><strong>1</strong>Astrachan, O., V. Khera, and D.
+Kotz. The Internet Programming Contest: A Report and Philosophy</dt>
+
+<dt><a name="Rezaul"></a><strong>2</strong>Chowdhury, R. A., and S. Manzoor.
+Orientation: National Computer Programming Contest 2000, Bangladesh National Programming Contest, 2000.</dt>
+
+<dt><a name="Fabian"></a><strong>3</strong>Ernst, F., J. Moelands, and S.
+Pieterse. Teamwork in Programming Contests: 3 * 1 = 4, Crossroads, 3.2.</dt>
+
+<dt><a name="Kaykobad"></a><strong>4</strong>Kaykobad, M. Bangladeshi
+Students in the ACM ICPC and World Championships, Computer Weekly. </dt>
+
+<dt><a name="Poucher"></a><strong>5</strong>Poucher, W. B. ACM-ICPC 2001,
+RCD Remarks, RCD Meeting of World Finals 2001. </dt>
+
+<dt><a name="Tom"></a><strong>6</strong>Verhoeff, T. Guidelines for
+Producing a Programming-Contest Problem Set: 
+<a href="http://wwwpa.win.tue.nl/wstomv/publications/guidelines.html">
+http://wwwpa.win.tue.nl/wstomv/publications/guidelines.html</a></dt>
+</dl> 
+
+
+
+
+<h2><a name="links"></a>Useful Links</h2>
+<p> 
+ACM Home Page: <a href="http://www.acm.org/">http://www.acm.org/</a> <br>
+ACM International Collegiate Programming Contest Problem Set Archive: <a href="http://www.acm.inf.ethz.ch/ProblemSetArchive.html"> 
+    http://www.acm.inf.ethz.ch/ProblemSetArchive.html</a> <br>
+ACM International Collegiate Programming Contest Web page: <a href="http://acm.baylor.edu/acmicpc/">http://acm.baylor.edu/acmicpc/</a><br> 
+American Computer Science League (ACSL) Homepage: <a href="http://www.acsl.org/acsl/"> 
+    http://www.acsl.org/acsl/</a> <br>
+Centrinës Europos informatikos olimpiados (CEOI) Resource Page: <a href="http://aldona.mii.lt/pms/olimp/tarpt/ceoi.html"> 
+    http://aldona.mii.lt/pms/olimp/tarpt/ceoi.html</a> <br>
+
+Informatics Competitions Link Page: <a href="http://olympiads.win.tue.nl/ioi/misc/other.html"> 
+    http://olympiads.win.tue.nl/ioi/misc/other.html</a> <br>
+
+Internet Problem Solving Contest (IPSC) web page: <a href="http://ipsc.ksp.sk/"> 
+    http://ipsc.ksp.sk/</a> <br>
+
+International Olympiad in Informatics (IOI) web page: <a href="http://olympiads.win.tue.nl/ioi/index.html"> 
+http://olympiads.win.tue.nl/ioi/index.html</a> <br>
+
+Mark Dettinger's Home Page: <a href="http://www.informatik.uni-ulm.de/pm/mitarbeiter/mark/"> 
+    http://www.informatik.uni-ulm.de/pm/mitarbeiter/mark/</a> <br>
+
+New POTM Master's Home Page: <a href="http://contest.uvarov.ru/">http://contest.uvarov.ru/</a> <br>
+
+PC<sup>2</sup> Home Page: <a href="http://www.ecs.csus.edu/pc2/">http://www.ecs.csus.edu/pc2/</a> <br>
+
+POTM Master's Home Page: <a href="http://members.tripod.com/%7EPOTM/fah_home.html">
+    http://members.tripod.com/~POTM/fah_home.html</a>  <br>
+
+Ural State University (USU) Problem Set Archive with Online Judge System: <a href="http://acm.timus.ru/">http://acm.timus.ru</a> <br>
+
+University Waterloo Contest Page: <a href="http://plg.uwaterloo.ca/%7Eacm00/"> 
+    http://plg.uwaterloo.ca/~acm00/</a> <br>
+
+Valladolid 24-hour Online Judge : <a href="http://acm.uva.es/problemset">http://acm.uva.es/problemset</a> <br>
+
+Valladolid Online Contest Hosting System: <a href="http://acm.uva.es/contest"> 
+    http://acm.uva.es/contest</a><br>
+
+Valladolid Problems link: <a href="http://acm.uva.es/p/v1/104.html">104</a>, 
+<a href="http://acm.uva.es/p/v1/120.html">120</a>, 
+<a href="http://acm.uva.es/p/v1/135.html">135</a>, 
+<a href="http://acm.uva.es/p/v3/371.html">371</a>, 
+<a href="http://acm.uva.es/p/v3/336.html">336</a>, 
+<a href="http://acm.uva.es/p/v4/466.html">466</a>, 
+<a href="http://acm.uva.es/p/v4/497.html">497</a>.<br>
+</p>
+
+<hr>
+<h2><a name="bio"></a>Biography</h2>
+  
+<p>Shahriar Manzoor (<a href="mailto:shahriar@neksus.com">shahriar@neksus.com</a>)
+is a BSc student of Bangladesh University of Engineering &amp;
+Technology (BUET). He participated in the 1999 ACM Regional Contest in
+Dhaka, and his team was ranked third. He is a very successful contest
+organizer. He has arranged six online contests for the <a href="http://acm.uva.es/contest/">Valladolid online judge</a> 
+  including the "World Final Warm-up Contest." His research interests are contests, algorithms, and Web-based 
+  applications.</p>
+
+
+<h2>Acknowledgements</h2>
+<p>Shahriar Manzoor is grateful to Prof. Miguel A. Revilla for letting him arrange 
+online contests and to Prof. William B. Poucher for asking people to participate 
+in the World Final Warm-up Contest. He is also grateful to Ciriaco Garcia, 
+Antonio Sanchez, F. P. Najera Cano, Fu Zhaohui, Dr. M. Kaykobad, Rezaul Alam Chowdhury, 
+Munirul Abedin, Tanbir Ahmed, Reuber Guerra and above all his family.</p>
+<p></p>
+
+<!-- Begin Bottom --><!-- Begin Side --></div> <!--content--></div> <!--center--></div> <!--container-->
+<!-- Begin Bottom -->
+
+<h4 style="text-align: center;">
+<a href="http://www.acm.org/crossroads/includes/copyright.html">Copyright 
+2004, The Association for Computing Machinery, Inc.</a>
+</h4>
+<div id="footerlinks">
+<div id="bottomlinks">
+ <div class="w3cbutton3">
+  <a href="http://validator.w3.org/check/referer">
+    <span class="w3c">W3C</span>
+    <span class="spec">XHTML 1.0</span>
+  </a>
+</div>
+
+ <div class="w3cbutton3">
+  <a href="http://jigsaw.w3.org/css-validator/">
+    <span class="w3c">W3C</span>
+    <span class="spec">CSS 2.0</span>
+  </a>
+</div>
+
+ <div class="w3cbutton3">
+  <a href="http://www.w3.org/WAI/WCAG1AAA-Conformance">
+    <span class="w3c">W3C</span>
+    <span class="spec">WCAG 1.0</span>
+  </a>
+</div>
+</div>
+</div>
+
+<!-- End Bottom -->
+<script src="contests_data/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-248272-1";
+urchinTracker();
+</script>
+
+
+</body></html>

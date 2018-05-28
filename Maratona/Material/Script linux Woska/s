@@ -1,0 +1,43 @@
+mkdir $1
+cd $1
+echo "#include <stdlib.h>"     > $1.cpp
+echo "#include <stdio.h>"     >> $1.cpp
+echo "#include <math.h>"      >> $1.cpp
+echo "   "
+echo "int main() {"           >> $1.cpp
+echo "do{" >> $1.cpp
+echo "   int a;" >> $1.cpp
+echo "   float b;" >> $1.cpp
+echo "   char c;" >> $1.cpp
+echo "   scanf("%d%c%f", &a, &b, &c);" >> $1.cpp
+echo "   char s[30];" >> $1.cpp
+echo "   gets(s);" >> $1.cpp
+echo "   printf("%d %f %c", a, b, c);" >> $1.cpp
+echo "   puts(s);" >> $1.cpp
+echo "return 0;"              >> $1.cpp
+echo "while(true)" >> $1.cpp
+echo "}"                      >> $1.cpp
+
+
+echo "" > $1.in
+echo "" > $1.sok
+
+gedit $1.cpp &
+gedit $1.sok &
+gedit $1.in &
+
+echo "g++ $1.cpp -o $1.exe"  > g
+chmod 755 g
+
+echo "./$1.exe < $1.in > $1.out" > e
+chmod 755 e
+
+echo "diff $1.sok $1.out"      > c
+chmod 755 c
+
+echo "./g" > d
+echo "./e" >> d
+echo "./c" >> d
+chmod 755 d
+
+exit 0
