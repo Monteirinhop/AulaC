@@ -1,16 +1,19 @@
 #include <stdio.h>
 
 void main(){
-int vetor[5],maior;
-maior = 0;
-for (int i = 1; i<=4 ;i++ ){
+int vetor[9],menor,antecessor;
+
+for (int i = 1; i<=8 ;i++ ){
     printf("digite os numero do vetor: %d ",i);
     scanf("%d",&vetor[i]);
-    if(vetor[i]>maior){
-    maior=vetor[i];
+    if(vetor[i]<menor){
+    menor=vetor[i];
+    antecessor = menor - 1;
 }
+
 }
-printf("o maior valor do vetor eh : %d  ",maior,"\n");
+printf("o menor valor do vetor eh : %d  ",menor,"\n");
+printf("Seu antecessor eh %d  ",antecessor,"\n");
 
 }
 
