@@ -8,7 +8,7 @@ void fibonacci(int num,int test)
    if(num==1 || num==2){}
 
    else{
-    test fibonacci(num-1) + fibonacci(num-2);
+    test = fibonacci(num-1) + fibonacci(num-2);
    }
 
 }
