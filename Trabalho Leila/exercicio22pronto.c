@@ -13,32 +13,30 @@ printf("/////////////////////////////////////// AUTHOR: GUSTAVO DIAS MONTEIRO   
 }
 void lerhoratrabalhada(float *x){
 printf("Insira Quantas horas voce trabalha no mes \t");
-scanf("%f",&*x);
+scanf("%f",x);
 }
 void lerganhohora(float *x){
-printf("Insira Quantas horas voce trabalha no mes \t");
-scanf("%f",&*x);
+printf("Insira Quanto voce ganha por hora \t");
+scanf("%f",x);
 }
-void calculotrabalho(float *x, float *y, float *z){
-*x = *y * *z;
-}
-void juros(float *x, float *y, float *z){
-if (*x > 40){ //x = horatrabalhada
-    *y = 1.5* *z; // y = taxa e z = salariototal
-    printf("O Seu Salario teve acrescimo pois voce trabalhou mais de 40 horas por mes ele foi de %f R&  ",*y);
+void calculotrabalho(float *salariototal, float *salariohora, float *horatrabalhada){
+if (*horatrabalhada > 160){
+    float horasextras = (*horatrabalhada - 160)*1.5f;
+    float ganho = *salariohora * *horatrabalhada;
+    *salariototal = horasextras + ganho;
+    printf("O Seu Salario teve acrescimo pois voce trabalhou mais de 40 horas por semana ele foi de %f R$, sendo desse valor o acrescimo de %f R$ ",*salariototal,horasextras);
 }else{
-    printf("O Seu Salario nao teve acrescimo pois voce trabalho 40 horas ou menos por mes e ele foi de %f R$  ",*z);
+    *salariototal = *salariohora * *horatrabalhada;
+    printf("O Seu Salario nao teve acrescimo pois voce trabalho 40 horas ou menos por semana e ele foi de %f R$  ",*salariototal);
 
 }
 }
-void main(){
-float salariohora ,horatrabalhada ,salariototal ,taxa ;
+int main(){
+float salariohora ,horatrabalhada ,salariototal ;
 comecotrabalho();
 lerhoratrabalhada(&horatrabalhada);
 lerganhohora(&salariohora);
 calculotrabalho(&salariototal,&salariohora,&horatrabalhada);
-juros(&horatrabalhada,&taxa,&salariototal);
 fimtrabalho();
+return 0;
 }
-
-
