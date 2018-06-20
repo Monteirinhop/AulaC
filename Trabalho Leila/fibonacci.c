@@ -1,20 +1,21 @@
 #include <stdio.h>
-void numeros(int x){
-printf("Digiet quantos numeros voce quer na sua seq fibonacci \t");
+void FazFib(int x){
+printf("Digite Quantas vezes se eh para fazer a seq de fib: ");
 scanf("%d",&x);
-}
-void fibonacci(int num,int test)
-{
-   if(num==1 || num==2){}
-
-   else{
-    test = fibonacci(num-1) + fibonacci(num-2);
-   }
-
+int n2 = 0,n1 = 1, n0;
+     for(int i=0; i < x; i++)
+  {
+    n0 = n1+n2;
+    printf("%d ", n0);
+    n2 = n1;
+    n1 = n0;
+  }
 }
 void main(){
-int seq,test;
-numeros(&seq);
+int x;
+FazFib(&x);
+
+
 }
 
 

@@ -1,38 +1,33 @@
 #include <stdio.h>
-void comecotrabalho(){
-printf("/////////////////////////////////////// BEM VINDO AO TRABALHO DO FINAL DO SEMESTRE ///////////////////////////////////// \n");
-printf("/////////////////////////////////////// VOCE ESTA NO EXERCICIO DE NUMERO 68        /////////////////////////////////////");
-printf("\n");
+
+void InsiraMercadoria(float *Quantidade){
+ printf("Insira a quantidade de mercadorias que voce : ");
+        scanf("%f",Quantidade);
 }
-void fimtrabalho(){
-printf("\n");
-printf("\n");
-printf("/////////////////////////////////////// OBRIGADO POR RODAR O CODIGO                ///////////////////////////////////// \n");
-printf("/////////////////////////////////////// AUTHOR: GUSTAVO DIAS MONTEIRO              /////////////////////////////////////");
+void ValorMercadoria(float *ValorMercadoria, float *Quantidade, float *Total){
+for (int i = 0; i < *Quantidade ;i++ ){
+    printf("Insira o valor de da mercadoria do tipo %i  : ", (i+1));
+    scanf("%f",ValorMercadoria);
+    *Total += *ValorMercadoria;
 }
-void mercadoria(float *x){
-printf("insira o numero total de mercadorias em estoque : \t");
-scanf("%f",&*x);
+printf("o Total foi de : %f", *Total);
 }
-void valor(float *x){
-printf("insira o valor de cada mercadoria :\t ");
-scanf("%f",&*x);
+void FazerMedia(float *Total, float *Quantidade,float *Media){
+*Media = *Total / *Quantidade;
+printf("\n A Media foi de : %f",*Media);
 }
-void conta(float *valor,float *nrtotal,float *mercad,float *media){
-*valor = *nrtotal * *mercad ;
-*media = *nrtotal / *mercad;
-}
-void mostrar(float *x,float *y){
-printf("o valor total das mercadorias foi de  %f Reais \n e a media foi de  %f R$",*x,*y);
-}
+
+
+
 void main(){
-float nrtotal,valormer,valortotal,media;
-comecotrabalho();
-mercadoria(&nrtotal);
-valor(&valormer);
-conta(&valortotal,&nrtotal,&valormer,&media);
-mostrar(&valortotal,&media);
-fimtrabalho();
+float quantidade,valormercadoria,total,media;
+InsiraMercadoria(&quantidade);
+
+ValorMercadoria(&valormercadoria,&quantidade,&total);
+
+FazerMedia(&total,&quantidade,&media);
+
+
 }
 
 
