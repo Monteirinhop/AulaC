@@ -83,8 +83,8 @@ int numeros[10],aloc = 0,x;
 char i;
 do
 {
-    printf ("Digite o nr do exercicio que voce quer 22,64,68, 55 para fibonnaci e 0 para sair para sair: ");
-  scanf("%d", &i);
+    printf ("Digite o nr do exercicio que voce quer 22,64,68, 1 para fibonnaci e 0 para sair para sair: ");
+    scanf("%i", &i);
 
 
 
@@ -110,7 +110,7 @@ ValorMercadoria(&valormercadoria,&quantidade,&total);
 FazerMedia(&total,&quantidade,&media);
 fimtrabalho();
 break;
-case 55:
+case 1:
 comecotrabalho(i);
 FazFib(&x);
 fimtrabalho();
@@ -119,7 +119,7 @@ case 0:
 fimtrabalho();
     break;
 default:
-    printf("Valor desconhecido");
+    printf("Valor desconhecido \n ");
     break;
 }}
 while (i != 0);
