@@ -1,0 +1,35 @@
+Aluno: Matheus Ronald Luz Oliveira
+
+Turma : BCC2
+
+
+1 - Construa uma função que realize o calculo do valor, sendo informados a base e o expoente.
+
+
+
+main> potencia 5 2 
+
+> 25
+
+pot a n | (n == 0) = 1 | (n == 1) = a | otherwise = a*(pot a (n-1))
+
+otherwise = de outra forma.
+
+
+
+2 - Faça uma função que some o numero "total". Exemplo: soma 1 = 1, soma 2 = 2+1, soma 3 = 3+2+1... E assim por diante
+
+
+
+
+soma 1 = 1
+soma n = soma(n-1) + n
+
+3- Faça uma tupla e extraia o segundo item dela:
+
+<1,2,3>
+<"matheus", 80>
+snd <"matheus", 80>
+80
+
+...

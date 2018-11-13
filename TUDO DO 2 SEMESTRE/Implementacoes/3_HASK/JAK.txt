@@ -1,0 +1,11 @@
+Calcular a distância entre dois pontos. 
+Resposta: Prelude> dist (a,b) (c,d) = sqrt((c-a)^2+(d-b)^2)
+
+Calcular o perímetro de um círculo. 
+Resposta: Prelude> perimCir raio = 2*pi*raio
+
+Mostrar os elementos pares de uma lista de inteiros. 
+Resposta: Prelude> [n|n<-[0..100], even n]
+
+Implementar a fórmula da soma dos termos de uma progressão aritmética. 
+Resposta: Prelude> soma (a,b) c = ((a+b)*c)/2, onde a é o primeiro termo, b é o último e c é a posição do último termo.
